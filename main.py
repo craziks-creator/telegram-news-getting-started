@@ -22,8 +22,8 @@ def ssc_id_policy(link):
 url2 = "https://sscnr.nic.in/newlook/site/Whatsnew.html"
 url7 = "https://sscnr.nic.in/newlook/site/application_status.html"
 url6 = "https://sscnr.nic.in/newlook/site/admit_card.html"
-tag2 = "Nrnews"
-table_name2 = "Nrnews"
+tag2 = "Nrnews2"
+table_name2 = "Nrnews2"
 
 # Info extractor to process data format
 ie1 = InfoExtractor()
