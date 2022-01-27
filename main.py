@@ -70,7 +70,7 @@ np1.set_table_name(table_name3)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 4----------------------------------#
 
 url4 = "https://ssc.nic.in/Portal/Results"
@@ -96,7 +96,7 @@ np1.set_table_name(table_name4)
 np1.set_max_list_length(45)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 5----------------------------------#
 
 url5 = "https://sssc.uk.gov.in/"
