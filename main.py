@@ -14,6 +14,9 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DATABASE_URL)
 db = Session(bind=engine.connect())
 
+#def ssc_id_policy(link):
+        #return hashlib.md5(link.encode("utf-8")).hexdigest()
+
 #-------------------------channel 2----------------------------------#
 
 url2 = "https://sscnr.nic.in/newlook/site/Whatsnew.html"
@@ -32,7 +35,7 @@ ie1.set_paragraph_selector('div.inner_page > ul > li ')
 ie1.set_time_selector('')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
-
+#ie1.set_id_policy(ssc_id_policy)
 # News postman to manage sending affair
 np1 = NewsPostman(listURLs=[url2,url7,url6, ], sendList=[channel,channel2, ], db=db, tag=tag2)
 np1.set_bot_token(bot_token)
