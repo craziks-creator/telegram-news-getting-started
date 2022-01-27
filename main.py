@@ -55,7 +55,7 @@ table_name3 = "result"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('#noticeschsl') #id_ul_li
+ie1.set_list_selector('##noticescgl.tab-content') #id_ul_li
 ie1.set_title_selector('span')  #id
 ie1.set_paragraph_selector('td:nth-child(4)')
 ie1.set_time_selector('tbody > tr > td > span')
@@ -82,7 +82,7 @@ table_name4 = "result2"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('#noticescgl') #id_ul_li
+ie1.set_list_selector('#noticescgl.tab-content') #id_ul_li
 ie1.set_title_selector('span')  #id
 ie1.set_paragraph_selector('span')
 ie1.set_time_selector('tbody > tr > td > span')
