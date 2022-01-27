@@ -14,9 +14,6 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DATABASE_URL)
 db = Session(bind=engine.connect())
 
-def ssc_id_policy(link):
-        return hashlib.md5(link.encode("utf-8")).hexdigest()
-
 #-------------------------channel 2----------------------------------#
 
 url2 = "https://sscnr.nic.in/newlook/site/Whatsnew.html"
