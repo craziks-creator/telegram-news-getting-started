@@ -82,10 +82,10 @@ table_name4 = "result2"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('div#noticescgl.tab-content>div.noticeTxt>div.noticeTable>div.table-responsive>table.table.table-bordered.table-striped>tbody>tr>td:nth-child(4)') #id_ul_li
-ie1.set_title_selector('tbody > tr > td:nth-child(2)span')  #id
-ie1.set_paragraph_selector('tbody > tr > td:nth-child(4)')
-ie1.set_time_selector('tbody > tr > td')
+ie1.set_list_selector('#noticescgl') #id_ul_li
+ie1.set_title_selector('span')  #id
+ie1.set_paragraph_selector('span')
+ie1.set_time_selector('tbody > tr > td > span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 
