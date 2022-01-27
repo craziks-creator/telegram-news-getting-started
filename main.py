@@ -44,7 +44,7 @@ np1.set_table_name(table_name2)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 3----------------------------------#
 
 url3 = "https://ssc.nic.in/Portal/Results"
@@ -71,7 +71,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 4----------------------------------#
 
 url4 = "https://ssc.nic.in/Portal/Results"
