@@ -56,7 +56,7 @@ ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
 ie1.set_list_selector('#noticeschsl.tab-content') #id_ul_li
-ie1.set_title_selector('tbody > tr > td:nth-child(2) > span')  #id
+ie1.set_title_selector('tbody > tr > td:nth-child(4)')  #id
 ie1.set_paragraph_selector('tbody > tr > td:nth-child(4)')
 ie1.set_time_selector('tbody > tr > td')
 ie1.set_source_selector('span.sourceTemplate')
@@ -82,7 +82,7 @@ ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
 ie1.set_list_selector('#noticescgl.tab-content') #id_ul_li
-ie1.set_title_selector('tbody > tr > td:nth-child(2) > span')  #id
+ie1.set_title_selector('tbody > tr > td:nth-child(4)')  #id
 ie1.set_paragraph_selector('tbody > tr > td:nth-child(4)')
 ie1.set_time_selector('tbody > tr > td')
 ie1.set_source_selector('span.sourceTemplate')
