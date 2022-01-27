@@ -55,9 +55,9 @@ table_name3 = "result"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('#noticescgl.tab-content') #id_ul_li
-ie1.set_title_selector('span')  #id
-ie1.set_paragraph_selector('td:nth-child(4)')
+ie1.set_list_selector('#noticeschsl.tab-content') #id_ul_li
+ie1.set_title_selector('td > span')  #id
+ie1.set_paragraph_selector('td:nth-child(4) > a')
 ie1.set_time_selector('tbody > tr > td > span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
@@ -83,7 +83,7 @@ ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
 ie1.set_list_selector('#noticescgl.tab-content') #id_ul_li
-ie1.set_title_selector('span')  #id
+ie1.set_title_selector('td:nth-child(2) > span')  #id
 ie1.set_paragraph_selector('span')
 ie1.set_time_selector('tbody > tr > td > span')
 ie1.set_source_selector('span.sourceTemplate')
