@@ -71,21 +71,21 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 4----------------------------------#
 
-url4 = "https://ssc.nic.in/Portal/Results"
-tag4 = "sscresult2"
-table_name4 = "result2"
+url4 = "https://ssc.nic.in/MarksStatus/MarksStatusIndex"
+tag4 = "sscscore"
+table_name4 = "scorecard"
 
 # Info extractor to process data format
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('tbody > tr > td:nth-child(4)') #id_ul_li
-ie1.set_title_selector('td:nth-child(2) > span')  #id
-ie1.set_paragraph_selector('td:nth-child(4) > a')
-ie1.set_time_selector('tbody > tr > td > span')
+ie1.set_list_selector('#ddlExam') #id_ul_li
+ie1.set_title_selector('#ddlExam')  #id
+ie1.set_paragraph_selector('#ddlExam')
+ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 
@@ -98,7 +98,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(45)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 5----------------------------------#
 
 url5 = "https://sssc.uk.gov.in/"
