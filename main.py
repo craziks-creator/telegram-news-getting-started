@@ -82,7 +82,7 @@ table_name4 = "scorecard"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('#ddlExam > *') #id_ul_li
+ie1.set_list_selector('select#ddlExam >option') #id_ul_li
 ie1.set_title_selector('#ddlExam')  #id
 ie1.set_paragraph_selector('#ddlExam')
 ie1.set_time_selector('span')
