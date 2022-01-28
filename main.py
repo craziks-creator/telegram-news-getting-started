@@ -44,21 +44,21 @@ np1.set_table_name(table_name2)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 3----------------------------------#
 
-url3 = "https://ssc.nic.in/Portal/Results"
-tag3 = "sscresult"
-table_name3 = "result"
+url3 = "https://ssc.nic.in/Portal/AnswerKey"
+tag3 = "answerkey"
+table_name3 = "anskey"
 
 # Info extractor to process data format
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('#noticeschsl.tab-content > tbody > tr') #id_ul_li
-ie1.set_title_selector('#noticeschsl.tab-content > tbody > tr > td > span')  #id
-ie1.set_paragraph_selector('#noticeschsl.tab-content > tbody > tr > td:nth-child(4) > a')
-ie1.set_time_selector('tbody > tr > td > span')
+ie1.set_list_selector('div.frmatCertificates > ul') #id_ul_li
+ie1.set_title_selector('div.frmatCertificates > ul > li')  #id
+ie1.set_paragraph_selector('div.frmatCertificates > ul > li')
+ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 
@@ -71,7 +71,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 4----------------------------------#
 
 url4 = "https://ssc.nic.in/Portal/Results"
