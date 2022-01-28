@@ -86,6 +86,7 @@ ie1.set_list_selector('#ddlExam') #id_ul_li
 ie1.set_title_selector('#ddlExam')  #id
 ie1.set_paragraph_selector('#ddlExam')
 ie1.set_time_selector('span')
+ie1.set_id_policy(ssc_id_policy)
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 
