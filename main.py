@@ -29,10 +29,10 @@ table_name2 = "Nrnews"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('div.inner_page > ul ') #id_ul_li
-ie1.set_title_selector('div.inner_page > ul ')  #id
-ie1.set_paragraph_selector('div.inner_page > ul ')
-ie1.set_time_selector('')
+ie1.set_list_selector('div.inner_page > ul > li') #id_ul_li
+ie1.set_title_selector('h4')  #id
+ie1.set_paragraph_selector('a')
+ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 
