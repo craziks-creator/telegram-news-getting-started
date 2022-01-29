@@ -41,7 +41,7 @@ np1 = NewsPostman(listURLs=[url2, ], sendList=[channel,channel2, ], db=db, tag=t
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name2)
-np1.set_max_list_length(25)
+np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 
@@ -68,7 +68,7 @@ np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name3)
 ie1.set_id_policy(ssc_id_policy)
-np1.set_max_list_length(25)
+np1.set_max_list_length(15)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 
@@ -96,7 +96,7 @@ np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name4)
 ie1.set_id_policy(ssc_id_policy)
-np1.set_max_list_length(45)
+np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 """
@@ -122,7 +122,7 @@ np1 = NewsPostman(listURLs=[url5, ], sendList=[channel,channel2, ], db=db, tag=t
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name5)
-np1.set_max_list_length(45)
+np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 """
@@ -149,7 +149,7 @@ np1 = NewsPostman(listURLs=[url6, ], sendList=[channel,channel2, ], db=db, tag=t
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name6)
-np1.set_max_list_length(45)
+np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 
@@ -176,7 +176,7 @@ np1 = NewsPostman(listURLs=[url7, ], sendList=[channel,channel2, ], db=db, tag=t
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name7)
-np1.set_max_list_length(45)
+np1.set_max_list_length(15)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 #-------------------------channel 1----------------------------------#
@@ -201,7 +201,7 @@ np1 = NewsPostman(listURLs=[url1, ], sendList=[channel,channel2, ], db=db, tag=t
 np1.set_bot_token(bot_token)
 np1.set_extractor(ie1)
 np1.set_table_name(table_name1)
-np1.set_max_list_length(25)
+np1.set_max_list_length(15)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 
