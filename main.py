@@ -71,7 +71,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(25)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 4----------------------------------#
 
 url4 = "https://ssc.nic.in/MarksStatus/MarksStatusIndex"
@@ -83,8 +83,8 @@ ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
 ie1.set_list_selector('select#ddlExam > option') #id_ul_li
-ie1.set_title_selector('option')  #id
-ie1.set_paragraph_selector('option')
+ie1.set_title_selector('h1')  #id
+ie1.set_paragraph_selector('select#ddlExam > option')
 ie1.set_time_selector('span')
 ie1.set_id_policy(ssc_id_policy)
 ie1.set_source_selector('span.sourceTemplate')
@@ -99,7 +99,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(45)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 5----------------------------------#
 
 url5 = "https://sscnr.nic.in/newlook/site/admit_card.html"
