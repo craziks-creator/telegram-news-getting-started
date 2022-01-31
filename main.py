@@ -71,7 +71,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(15)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 4----------------------------------#
 
 url4 = "https://ssc.nic.in/MarksStatus/MarksStatusIndex"
@@ -99,7 +99,7 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 5----------------------------------#
 
 url5 = "https://ssc.nic.in/Portal/Results"
@@ -110,7 +110,7 @@ table_name5 = "cpo"
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('div#noticeschsl.tab-content>tbody>tr>td:nth-child(4)') #id_ul_li
+ie1.set_list_selector('div#noticeschsl.tab-content>tbody') #id_ul_li
 ie1.set_title_selector('div#noticeschsl.tab-content>tbody>tr>td:nth-child(4)>a')  #id
 ie1.set_paragraph_selector('div#noticeschsl.tab-content>tbody>tr>td:nth-child(4)>a')
 ie1.set_time_selector('span')
