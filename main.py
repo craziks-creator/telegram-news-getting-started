@@ -99,21 +99,21 @@ ie1.set_id_policy(ssc_id_policy)
 np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 5----------------------------------#
 
-url5 = "https://sscnr.nic.in/newlook/site/admit_card.html"
-tag5 = "admitcard"
-table_name5 = "admitcard"
+url5 = "https://ssc.nic.in/Portal/Results"
+tag5 = "cporesult"
+table_name5 = "cpo"
 
 # Info extractor to process data format
 ie1 = InfoExtractor()
 
 # Select elements by CSS-based selector
-ie1.set_list_selector('div.inner_page > ul ') #id_ul_li
-ie1.set_title_selector('div.inner_page > ul > li ')  #id
-ie1.set_paragraph_selector('div.inner_page > ul > li ')
-ie1.set_time_selector('')
+ie1.set_list_selector('div#noticeschsl.tab-content>tbody>tr>td:nth-child(4)') #id_ul_li
+ie1.set_title_selector('div#noticeschsl.tab-content>tbody>tr>td:nth-child(4)>a')  #id
+ie1.set_paragraph_selector('div#noticeschsl.tab-content>tbody>tr>td:nth-child(4)>a')
+ie1.set_time_selector('span')
 ie1.set_source_selector('span.sourceTemplate')
 ie1.max_post_length = 2000
 
@@ -125,7 +125,7 @@ np1.set_table_name(table_name5)
 np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 6----------------------------------#
 
 url6 = "https://sscnr.nic.in/newlook/site/admit_card.html"
