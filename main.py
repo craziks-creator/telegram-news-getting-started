@@ -22,8 +22,8 @@ db = Session(bind=engine.connect())
 url2 = "https://sscnr.nic.in/newlook/site/Whatsnew.html"
 #url7 = "https://sscnr.nic.in/newlook/site/application_status.html"
 #url6 = "https://sscnr.nic.in/newlook/site/admit_card.html"
-tag2 = "Nrnews"
-table_name2 = "Nrnews"
+tag2 = "Nrnewsa"
+table_name2 = "Nrnewsa"
 
 # Info extractor to process data format
 ie1 = InfoExtractor()
@@ -124,6 +124,7 @@ np1.set_table_name(table_name7)
 np1.set_max_list_length(15)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
+"""
 #-------------------------channel 1----------------------------------#
 
 url1 = "https://ssc.nic.in/Portal/LatestNews"
@@ -150,7 +151,7 @@ np1.set_max_list_length(20)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
 #-------------------------channel 2----------------------------------#
-"""
+
 url2 = "https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fssc.nic.in%2FPortal%2FLatestNews&max=5&order=document&guid=0"
 tag2 = "Sscrss"
 table_name2 = "sscrss"
