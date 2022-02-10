@@ -127,7 +127,7 @@ np1.poll()
 
 #-------------------------channel 1----------------------------------#
 
-url1 = "https://ssc.nic.in/Portal/LatestNews"
+url1 = "https://doc.ssc.nic.in/Portal/LatestNews"
 tag1 = "ssc"
 table_name1 = "sscnews"
 
