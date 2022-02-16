@@ -44,7 +44,7 @@ np1.set_table_name(table_name2)
 np1.set_max_list_length(10)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-
+"""
 #-------------------------channel 3----------------------------------#
 
 url3 = "https://ssc.nic.in/Portal/AnswerKey"
@@ -124,7 +124,7 @@ np1.set_table_name(table_name7)
 np1.set_max_list_length(15)
 np1.set_max_table_rows(25 * 3, False)
 np1.poll()
-"""
+
 #-------------------------channel 1----------------------------------#
 
 url1 = "https://doc.ssc.nic.in/Portal/LatestNews"
